@@ -1,0 +1,161 @@
+@import './reset.css';
+@import './typography.css';
+@font-face {
+  font-family: Sahel;
+  src: url("./fonts/Sahel.eot");
+  src: url("./fonts/Sahel.eot?#iefix") format("embedded-opentype"), url("./fonts/Sahel.woff2") format("woff2"), url("./fonts/Sahel.woff") format("woff"), url("./fonts/Sahel.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Sahel;
+  src: url("./fonts/Sahel-Bold.eot");
+  src: url("./fonts/Sahel-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Sahel-Bold.woff2") format("woff2"), url("./fonts/Sahel-Bold.woff") format("woff"), url("./fonts/Sahel-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Sahel;
+  src: url("./fonts/Sahel-Light.eot");
+  src: url("./fonts/Sahel-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Sahel-Light.woff2") format("woff2"), url("./fonts/Sahel-Light.woff") format("woff"), url("./fonts/Sahel-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Sahel;
+  src: url("./fonts/Sahel-SemiBold.eot");
+  src: url("./fonts/Sahel-SemiBold.eot?#iefix") format("embedded-opentype"), url("./fonts/Sahel-SemiBold.woff2") format("woff2"), url("./fonts/Sahel-SemiBold.woff") format("woff"), url("./fonts/Sahel-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Sahel;
+  src: url("./fonts/Sahel-Black.eot");
+  src: url("./fonts/Sahel-Black.eot?#iefix") format("embedded-opentype"), url("./fonts/Sahel-Black.woff2") format("woff2"), url("./fonts/Sahel-Black.woff") format("woff"), url("./fonts/Sahel-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+body {
+  background-color: #120638;
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: #FFBCD8;
+  width: 42.5%;
+  margin: auto;
+  box-shadow: 0px 0px 2px 2px #FFBCD8;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+.box-h3 {
+  margin: 0;
+  color: #253536;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.box a {
+  text-decoration: none;
+}
+.box-btn {
+  display: flex;
+  margin: auto;
+  background-color: #A3320B;
+  border: none;
+  box-shadow: 0px 0px 2px 2px #A3320B;
+  padding: 12px 24px;
+  border-radius: 40px;
+  color: #ECF0F1;
+  font-family: Sahel;
+  font-weight: 900;
+  font-size: 30px;
+}
+.box-btn:hover {
+  background-color: #932210;
+  box-shadow: 0px 0px 2px 2px #932210;
+}
+.box-btn:active {
+  background-color: #6b180c;
+  box-shadow: 0px 0px 2px 2px #6b180c;
+}
+.box-game {
+  margin-top: 10%;
+  width: 60%;
+  display: flex;
+}
+.box-game-rps {
+  display: flex;
+  justify-content: center;
+}
+.box-game-rps-img {
+  width: 20%;
+  margin: 10px 20px;
+  transition: 300MS;
+}
+.box-game-user {
+  width: 50%;
+  border-left: 1px solid #253536;
+}
+.box-game-user h3 {
+  margin: 0;
+  color: #253536;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.box-game-pc {
+  width: 50%;
+  border-right: 1px solid #253536;
+}
+.box-game-pc h3 {
+  margin: 0;
+  color: #253536;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.arrow {
+  background-image: url("./images/arrow.png");
+  background-repeat: no-repeat;
+  height: 180px;
+  position: relative;
+  left: 45%;
+  margin-top: 10px;
+}
+
+a.github {
+  text-decoration: none;
+  color: #f5f6fa;
+  background-color: #9c88ff;
+  border: 1px solid #6b5cb4;
+  border-radius: 16px;
+  margin-right: 6px;
+  padding: 0px 8px;
+}
+a.github:hover {
+  background-color: #8c7ae6;
+}
+
+img.svg {
+  width: 13px;
+  padding: 0 4px;
+}
+
+p.create {
+  color: #f5f6fa;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+p.create-game {
+  position: absolute;
+  bottom: 0;
+}
+
+#scoreUSER, #scorePC {
+  padding: 0 10px;
+}
