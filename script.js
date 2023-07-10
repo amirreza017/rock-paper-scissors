@@ -16,7 +16,7 @@ function scorePC(number) {
     numscorePC = numscorePC + number;
     return numscorePC;
 }
-
+// Rock
 document.getElementById('rock').addEventListener('click',() => {
     rpsPC = grn(0,3);
     if (rpsPC === 0) {
@@ -64,7 +64,7 @@ document.getElementById('rock').addEventListener('click',() => {
         document.getElementById('scorePC').innerHTML = `امتیاز کامپیوتر: ${numscorePC}`;
     }
 })
-
+// Paper
 document.getElementById('paper').addEventListener('click',() => {
     rpsPC = grn(0,3);
     if (rpsPC === 0) {
@@ -106,13 +106,13 @@ document.getElementById('paper').addEventListener('click',() => {
             document.getElementById('paper').style.border = 'none';
             }, 2000);
 
-        scoreUSER(1);
-        scorePC(0)
+        scoreUSER(0);
+        scorePC(1)
         document.getElementById('scoreUSER').innerHTML = `امتیاز شما: ${numscoreUSER}`;
         document.getElementById('scorePC').innerHTML = `امتیاز کامپیوتر: ${numscorePC}`;
     }
 })
-
+// Scissor
 document.getElementById('scissor').addEventListener('click',() => {
     rpsPC = grn(0,3);
     if (rpsPC === 0) {
@@ -124,8 +124,8 @@ document.getElementById('scissor').addEventListener('click',() => {
             document.getElementById('rock2').style.border = 'none';
             document.getElementById('scissor').style.border = 'none';
             }, 2000);
-        scoreUSER(1);
-        scorePC(0)
+        scoreUSER(0);
+        scorePC(1)
         document.getElementById('scoreUSER').innerHTML = `امتیاز شما: ${numscoreUSER}`;
         document.getElementById('scorePC').innerHTML = `امتیاز کامپیوتر: ${numscorePC}`;
     }
@@ -139,7 +139,7 @@ document.getElementById('scissor').addEventListener('click',() => {
             document.getElementById('scissor').style.border = 'none';
             }, 2000);
 
-        scoreUSER(0);
+        scoreUSER(1);
         scorePC(0)
         document.getElementById('scoreUSER').innerHTML = `امتیاز شما: ${numscoreUSER}`;
         document.getElementById('scorePC').innerHTML = `امتیاز کامپیوتر: ${numscorePC}`;
@@ -154,7 +154,7 @@ document.getElementById('scissor').addEventListener('click',() => {
             document.getElementById('scissor').style.border = 'none';
             }, 2000);
 
-        scoreUSER(1);
+        scoreUSER(0);
         scorePC(0)
         document.getElementById('scoreUSER').innerHTML = `امتیاز شما: ${numscoreUSER}`;
         document.getElementById('scorePC').innerHTML = `امتیاز کامپیوتر: ${numscorePC}`;
